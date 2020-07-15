@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>One Team</title>
+		<link rel="stylesheet" href="styles.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <style scoped="">
+        body{
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+            background-color: #87CEEB;
+        }
+        .overlay{
+          position: fixed;
+          top: 50%;
+          left: 50%;
+          color: black;
+          background-color: LightCyan;
+          transform: translate(-50%,-50%);
+          -ms-transform: translate(-50%,-50%);
+          width: 50%;
+          height: 50%;
+          opacity: 0.98;
+          border: 1px solid;
+          border-color: black;
+          overflow-y: scroll;
+        }
+        .back{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    right: 0;
+              width: 100%;
+          height: 100%;
+     background: rgba(0, 0, 0, 0.5);
+        }
+	        </style>
+        <script>
+            $(function () {
+              var svg = document.getElementsByTagName('svg')[0]  
+             $("#lucy").click(function(){
+                $("#bck").show()
+                $("#lucyblog").show()
+             });
+
+             $(".bow").hover(function(){
+                $(this).fadeTo(500, 0.4);
+             }, function(){
+                $(this).fadeTo(500, 1);
+             });
+
+
+             $("#lucia").click(function(){
+                $("#bck").show()
+                $("#luciablog").show()
+             });
+             $("#mark").click(function(){
+                $("#bck").show()
+                $("#markblog").show()
+             });
+
+             $("#ann").click(function(){
+                $("#bck").show()
+                $("#annblog").show()
+             });
+ 
+             $("#elinor").click(function(){
+                $("#bck").show()
+                $("#elinorblog").show()
+             });
+             
+             $("#oliver").click(function(){
+                $("#bck").show()
+                $("#oliverblog").show()
+             });
+                          
+             $("#tim").click(function(){
+                $("#bck").show()
+                $("#timblog").show()
+             });
+                  
+             $("#alex").click(function(){
+                $("#bck").show()
+                $("#alexblog").show()
+             });
+             
+             $("#creative1").click(function(){
+                $("#bck").show()
+                $("#creative1blog").show()
+             }); 
+             
+             $("#creative2").click(function(){
+                $("#bck").show()
+                $("#creative2blog").show()
+             }); 
+             
+             $("#creative3").click(function(){
+                $("#bck").show()
+                $("#creative3blog").show()
+             });    
+			 
+			$("#creative4").click(function(){
+                $("#bck").show()
+                $("#creative4blog").show()
+             });  
+
+			 $("#history").click(function(){
+                $("#bck").show()
+                $("#historyblog").show()
+             });  
+			 
+			 $("#science").click(function(){
+                $("#bck").show()
+                $("#scienceblog").show()
+             }); 
+			 
+             $(".close").click(function(){
+                $("#bck").hide()
+                $(".overlay").hide()
+             });
+            })
+            
+        </script>
+		<div style="color:white;"><h1 style="text-align:center;"> &#9729; The One Team &#9729;</h1><h2 style="text-align:center">~ after every storm there is a rainbow ~</h2></div>
+		
+		
+		<div id="quoteDisplay"><p id="quoteHere"></p>
+		<body onload="newQuote()">
+		<button onclick="newQuote()">New Quote</button>
+		<script src="quoteScript.js"></script></div>
+		<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-20 -17 40 17" width="100%" height="50%">
+
+		<g fill="none" stroke-width="1">
+			  <circle r="16" stroke="#ee82ee" id="lucy" class="bow" transform="rotate(-170)" />
+			  <circle r="15" stroke="#000083" id="history" class="bow"  transform="rotate(-170)" />
+			  <circle r="14" stroke="#009bfe" id="ann" class="bow"  transform="rotate(-170)" />
+			  <circle r="13" stroke="#00bb00" id="creative1" class="bow"  transform="rotate(-170)" />
+			  <circle r="12" stroke="#fef600" id="elinor" class="bow"  transform="rotate(-170)" />
+			  <circle r="11" stroke="#fe6230" id="creative2" class="bow"  transform="rotate(-170)" />
+			  <circle r="10" stroke="#dd0000" id="mark" class="bow"  transform="rotate(-170)" />
+			  <circle r="8" stroke="#dd0000" id="alex" class="bow"  transform="rotate(-170)" />
+			  <circle r="7" stroke="#fe6230" id="creative3" class="bow"  transform="rotate(-170)" />
+			  <circle r="6" stroke="#fef600" id="lucia"  class="bow" transform="rotate(-170)" />
+			  <circle r="5" stroke="#00bb00" id="science" class="bow"  transform="rotate(-170)" />
+			  <circle r="4" stroke="#009bfe" id="tim"  class="bow" transform="rotate(-170)" />
+			  <circle r="3" stroke="#000083" id="creative4"  class="bow"  transform="rotate(-170)" />
+			  <circle r="2" stroke="#ee82ee" id="oliver" class="bow"  transform="rotate(-170)" />
+			</g>
+			
+		<defs>
+            <path id="quotepath" d="M-17,0a17,17 0 1,1 34,0a17,17 0 2,0 -34,0"/>
+			<path id="lucypath" d="M-16,0a16,16 0 1,1 32,0a16,16 0 1,0 -32,0"/>
+			<path id="historypath" d="M-15,0a15,15 0 1,1 30,0a15,15 0 1,0 -30,0"/>
+			<path id="annpath" d="M-14,0a14,14 0 1,1 28,0a14,14 0 1,0 -28,0"/>
+			<path id="creative1path" d="M-13,0a13,13 0 1,1 26,0a13,13 0 1,0 -26,0"/>
+			<path id="elinorpath" d="M-12,0a12,12 0 1,1 24,0a12,12 0 1,0 -24,0"/>
+			<path id="creative2path" d="M-11,0a11,11 0 1,1 22,0a11,11 0 1,0 -22,0"/>
+			<path id="markpath" d="M-10,0a10,10 0 1,1 20,0a10,10 0 1,0 -20,0"/>
+			<path id="alexpath" d="M-8,0a8,8 0 1,1 16,0a8,8 0 1,0 -16,0"/>
+			<path id="creative3path" d="M-7,0a7,7 0 1,1 14,0a7,7 0 1,0 -14,0"/>
+			<path id="luciapath" d="M-6,0a6,6 0 1,1 12,0a6,6 0 1,0 -12,0"/>
+			<path id="sciencepath" d="M-5,0a5,5 0 1,1 10,0a5,5 0 1,0 -10,0"/>	
+			<path id="timpath" d="M-4,0a4,4 0 1,1 8,0a4,4 0 1,0 -8,0"/>	
+			<path id="creative4path" d="M-3,0a3,3 0 1,1 6,0a3,3 0 1,0 -6,0"/>	
+			<path id="oliverpath" d="M-2,0a2,2 0 1,1 4,0a2,2 0 1,0 -4,0"/>	
+
+		</defs> 
+
+			<g xml:space="preserve" transform="rotate(10 0 0)" style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:0.666667px;line-height:0.4;font-family:'Franklin Gothic Heavy';stroke-width:2">>
+            <text><textPath id="quotetext" xlink:href="#quotepath">Click to Explore the rainbow</textPath></text>  
+              <text><textPath xlink:href="#lucypath">LUCY</textPath></text>
+			  <text><textPath xlink:href="#annpath">ANN</textPath></text>
+			  <text><textPath xlink:href="#elinorpath" >ELINOR</textPath></text>
+			  <text><textPath xlink:href="#markpath" >MARK</textPath></text>
+			  <text><textPath xlink:href="#alexpath">ALEX</textPath></text>
+			  <text><textPath xlink:href="#luciapath" >LUCIA</textPath></text>
+			  <text><textPath xlink:href="#timpath" >TIM</textPath></text>
+			  <text><textPath xlink:href="#oliverpath" >OLIVER</textPath></text>
+			</g>
+			<g xml:space="preserve" transform="rotate(10 0 0)" style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:0.666667px;line-height:0.4;font-family:'Franklin Gothic Heavy';stroke-width:2;fill:#ffffff">
+			  <text><textPath xlink:href="#creative1path">BACK TO NATURE</textPath></text>
+			  <text><textPath xlink:href="#creative2path">LIFE AT HOME DURING LOCKDOWN</textPath></text>
+			  <text><textPath xlink:href="#creative3path">NURTURING ALL THE POSITIVES ABOUT WORKING FROM HOME</textPath></text>
+			  <text><textPath xlink:href="#historypath">HISTORY AND MYTHOLOGY OF RAINBOWS</textPath></text>
+			  <text><textPath xlink:href="#sciencepath">SCIENCE OF RAINBOWS</textPath></text>
+			  <text><textPath xlink:href="#creative4path">AFTER EVERY STORM</textPath></text>
+			</g>
+			
+		</svg>
+		        <div id="bck" class="back" style="display:none;">
+            <button class="close" style="float:right;">&#10006; </button>
+            <div id="lucyblog" class="overlay" style="display:none;">
+            <h3>Lucy MACC Challenge</h3>
+            <p>Something about the challenge</p>
+        </div>
+            <div id="markblog" class="overlay" style="display:none;">
+                <h3>Mark MACC Challenge</h3>
+                <p>Something about the challenge</p>
+            </div>
+            <div id="annblog" class="overlay" style="display:none;">
+                <h3>Ann MACC Challenge</h3>
+                <p>Something about the challenge</p>
+            </div>
+            <div id="alexblog" class="overlay" style="display:none;">
+                <h3>Alex MACC Challenge</h3>
+                <p>Something about the challenge</p>
+            </div>
+            <div id="elinorblog" class="overlay" style="display:none;">
+                <h3>Elinor MACC Challenge</h3>
+                <p>Something about the challenge</p>
+            </div>
+            <div id="luciablog" class="overlay" style="display:none;">
+                <h3>Lucia MACC Challenge</h3>
+                <p>Something about the challenge</p>
+            </div>
+            <div id="oliverblog" class="overlay" style="display:none;">
+                <h3>Oliver MACC Challenge</h3>
+                <p>Something about the challenge</p>
+            </div>
+            <div id="timblog" class="overlay" style="display:none;">
+                <h3>Tim MACC Challenge</h3>
+                <p>Something about the challenge</p>
+            </div> 
+
+            <div id="historyblog" class="overlay" style="display:none;">
+                <h4>History of Rainbows</h4>
+                <p>The word rainbow literally means "rainy arch", from the Latin <i>arcus pluvis</i>. They are a natuarally occuring phenomena that have fascinated humans throughout history, so much so that they have carved a prominent place in the mythology of many different cultures. In Classical times, the Romans and Greeks thought that rainbows pathways greated by the goddess Iris to link human beings to the world of the immortals. Rainbows were much debated over by the early philosophers and writers: the Greek poet Homer thought that they were comprised of only one colour (purple) but the philosopher Xenophanes argued for three colours, purple, yellow-green and red (Aristole agreed with this number). This debated was parked for more than three quarters of a millenium, until the Renaissance, when it was decided that the yellow and green were in fact separate colours. This brought the total up to 4. By the 17th century, the colour blue had also been added. All this discussion took place before anyone had any idea how rainbows were formed. But this was about to change. In 1637, Rene Descartes discovered that they were caused by light from the sun being split into different colours by the rain, and then in 1666, Isaac Newton added the last two colours - indigo and orange - to give us the seven colours that we still use today.</p>
+				<h4>Mythology of Rainbows</h4>
+				
+				<p>In Norse mythology, the rainbow is seen as a burning bridge that stretches between Midgard (Earth) and Asgard (the realm of the gods). This rainbow bridge is called <i>Bifrost</i> and it's destruction during <i>Ragnarok</i> (a period of future battle) is foretold in Norse folklore. Some scholars believe that the bridge may originally have represented te Milky Way galaxy.</p>
+				<p>Other cultures also see the rainbow as a bridge, namely: ancient Japanese cultures, who believed that rainbows were bridges that ancestors used to descend to the planet; Navajo traditions, which tell of the rainbow as the bridge of the holy spirits; and Maori mythology, which tells the story of the moon, who created a rainbow so that her mortal husband could retun to earth to die</p>
+				
+				<p>Rainbows feature in the earliest written evidence of human civilisation, <i>The Epic of Gilgamesh</i>. This tells the story of an ancient Sumerian king (3000 BC). One translation tells how the king saw "a mass of colours like the rainbow's hues" that are "linked to divine sacntion for war". This directly contrasts the Abrahamic mythology which sees the rainbow as a sign of peace and promise.</p>
+				<h5>Notable Others:</h5>
+				<ul>
+				<li>In Native American traditions, the rainbow is thought to be the "hem of the sun's coat".</li>
+				<li>The Fang of Gabon in Africa are initiated into their religion by a "transcendent experience when they arrive at the rainbow's centre, for there they can see both the entire circle of the rainbow and of the earth.</li>
+				<li>For Buddhists, the rainbow is the highest state achievable before attaining Nirvana. There are seven people who are reported to have achieved "rainbow body".</li>
+				<li>The "Whirling Rainbow" is a Native American prophecy that foretells of a day when "people of all races... will put aside their differences. They will come together in love, joinig hands in unification, to heal the Earth and all Her Children".</li>
+				</ul>
+			</div>			
+
+            <div id="scienceblog" class="overlay" style="display:none;">
+                <h3>Science of Rainbows</h3>
+                <p>Something about the science of rainbows</p>
+            </div>	
+			
+			<div id="creative4blog" class="overlay" style="display:none;">
+                <h3>After every storm</h3>
+                <p>Something positive</p>
+            </div>	
+			
+            <div id="creative1blog" class="overlay" style="display:none;background: rgba(0, 0, 0, 0.5);">
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/p9PR-PNIsvk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div id="creative2blog" class="overlay" style="display:none;background: rgba(0, 0, 0, 0.5);">
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/-McIu9sM0Gg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div id="creative3blog" class="overlay" style="display:none;">
+
+                <img src="The+One+Team+Cake.jfif" alt="cake image" style='height: 100%; width: 100%; object-fit: contain'/>
+            </div>
+            </div>              
+        </div>
+    </body>
+</html>
